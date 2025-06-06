@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TransferMe</string>
+    <string name="text1">Your Best Money Transfer Partner.</string>
+    <string name="text2">Secured by</string>
+    <string name="text3">Welcome to</string>
+    <string name="tran">TransferMe.</string>
+    <string name="start">Get Started</string>
+    <string name="onboard2">Saving Your Money</string>
+    <string name="onboard22">Track the progress of your savings and start a habit of saving with TransferMe.</string>
+    <string name="Continue">Continue</string>
+    <string name="onboard3">Free Transactions</string>
+    <string name="onboard33">Provides the quality of the financial system with free money transactions without any fees.</string>
+    <string name="onboard4">International Transactions</string>
+    <string name="onboard44">Provides the 100% freedom of the  financial management with lowest fees on International transactions.</string>
+</resources>
