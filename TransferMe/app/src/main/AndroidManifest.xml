@@ -41,6 +41,22 @@
             android:name=".OnboardingActivity4"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".MainCard"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".TransactionMain"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".TransactionMain2"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

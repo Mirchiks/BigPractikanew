@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/m">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/AnalyzesButtonMenu"
+            android:layout_width="40dp"
+            android:src="@drawable/home"
+            android:background="@null"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/RecordsButtonMenu"
+            android:layout_width="50dp"
+            android:src="@drawable/wallet"
+            android:background="@null"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/BasketButtonMenu"
+            android:layout_width="50dp"
+            android:src="@drawable/chart"
+            android:background="@null"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/ProfileButtonMenu"
+            android:layout_width="40dp"
+            android:src="@drawable/prof"
+            android:background="@null"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
