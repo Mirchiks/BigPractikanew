@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+  >
+        <TextView
+            android:id="@+id/Usd"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:text="USD\n72.26"/>
+
+        <TextView
+            android:id="@+id/Euro"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/radius"
+            android:layout_height="wrap_content"
+
+            android:text="Euro\n34.48"/>
+
+        <TextView
+            android:id="@+id/Yen"
+            android:background="@drawable/radius"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:text="Yen\n85.31"/>
+    </LinearLayout>

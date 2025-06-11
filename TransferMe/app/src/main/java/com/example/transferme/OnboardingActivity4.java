@@ -1,7 +1,6 @@
 package com.example.transferme;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -22,10 +21,7 @@ public class OnboardingActivity4 extends AppCompatActivity {
 
 
         btnGetStarted.setOnClickListener(v -> {
-            SharedPreferences preferences = getSharedPreferences("app_prefs", MODE_PRIVATE);
-            preferences.edit().putBoolean("onboarding_complete", true).apply();
-
-            startActivity(new Intent(OnboardingActivity4.this, Glav.class));
+            startActivity(new Intent(OnboardingActivity4.this, Home.class));
             finish();
         });
 

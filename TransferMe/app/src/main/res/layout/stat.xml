@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/naz"
+                android:backgroundTint="@color/blue"
+                android:text="<"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <SearchView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:queryHint="Search"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Overall Incomings"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/seeDetails"
+                android:layout_marginLeft="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <ImageButton
+                android:id="@+id/btnCalendar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/calendar"
+                android:background="@drawable/radius2"
+
+                />
+            <TextView
+                android:id="@+id/DateRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-3"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                />
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/graf"
+                        android:background="@drawable/m"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue"
+                    android:text="$50.84"
+
+                    android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Overall Outgoings"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/seeDetails2"
+                android:layout_marginLeft="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <ImageButton
+                android:id="@+id/btnCalendar2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/calendar"
+                android:background="@drawable/radius"
+
+                />
+            <TextView
+                android:id="@+id/DateRange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-3"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/graff2"
+                android:background="@drawable/m"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bluee"
+                android:text="$50.84"
+
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <include layout="@layout/menu" />
+    </LinearLayout>
+
+</ScrollView>
