@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profile"
+                android:text="@string/profile"
                 android:gravity="right"
                 android:layout_centerInParent="true"
                 android:textSize="24sp"
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:textColor="@color/gray"
             android:layout_height="wrap_content"
-            android:text="Please set up your profile"
+            android:text="@string/profile2"
             android:textSize="16sp"
             android:layout_gravity="center"
             android:layout_marginBottom="32dp"/>
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/gray"
-            android:text="First Name"/>
+            android:text="@string/firstname"/>
         <EditText
             android:id="@+id/first_name"
             android:layout_width="match_parent"
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/gray"
-            android:text="Last Name"/>
+            android:text="@string/lastname"/>
         <EditText
             android:id="@+id/last_name"
             android:layout_width="match_parent"
@@ -85,7 +85,8 @@
             android:id="@+id/save_button"
             android:layout_width="130dp"
             android:layout_height="60dp"
-            android:text="Set"
+            android:text="@string/set"
+            android:textColor="@color/white"
             android:backgroundTint="@color/blue"
             android:textAllCaps="false"
             android:layout_marginTop="26dp"/>

@@ -38,7 +38,7 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.View
     @Override
     public void onBindViewHolder(@NonNull CategoriaAdapter.ViewHolder holder, int position) {
         Category category = categoryList.get(position);
-        String url = "https://ubotxdvkhvusymbhrgvy.supabase.co/storage/v1/object/public/avatarscategory/";
+        String url = "https://guuwesagidyhlkgmzygs.supabase.co/storage/v1/object/public/avatarscategory/";
         Glide.with(context)
                 .load(url + category.getAvatar_category())
                 .placeholder(R.drawable.button_off)
@@ -49,6 +49,9 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.View
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, TransferNextActivity.class);
+                intent.putExtra("id_category",category.getId());
+                intent.putExtra("name",category.getName());
+                intent.putExtra("avatar",category.getAvatar_category());
                 if (context instanceof Activity) {
                     context.startActivity(intent);
                 } else {

@@ -14,7 +14,7 @@ public class TransactionMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.glavnay);
+        setContentView(R.layout.home);
         List<Transaction> transactionList = new ArrayList<>();
         transactionList.add(new Transaction(
                 "Johnny Bairstow",
@@ -26,7 +26,7 @@ public class TransactionMain extends AppCompatActivity {
                 "Jonny sfsf",
                 "24 December 2020",
                 "+ $75.50",
-                R.drawable.man));
+                R.drawable.man3));
 
         RecyclerView recyclerView = findViewById(R.id.incomingRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

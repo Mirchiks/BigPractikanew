@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profile Settings"
+                android:text="@string/profileset"
                 android:gravity="right"
                 android:layout_centerInParent="true"
                 android:textSize="24sp"
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Your Profile Information"
+                android:text="@string/prof2"
                 android:textSize="16sp"
                 android:textColor="@color/gray"
                 android:layout_marginBottom="16dp"/>
@@ -65,7 +65,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Personal Information"
+                android:text="@string/inform"
                 android:textSize="16sp"
                 android:textColor="@color/blue"
                 android:textStyle="bold"
@@ -82,7 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Account Number"
+                    android:text="@string/ac1"
                     android:textColor="@color/blue"/>
 
                 <EditText
@@ -107,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Username"
+                    android:text="@string/ac2"
                     android:textColor="@color/blue"/>
 
                 <EditText
@@ -131,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Email"
+                    android:text="@string/ac3"
                     android:textColor="@color/blue"/>
 
                 <EditText
@@ -156,7 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Mobile Phone"
+                    android:text="@string/ac4"
                     android:textColor="@color/blue"/>
 
                 <EditText
@@ -180,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Address"
+                    android:text="@string/ac5"
                     android:textColor="@color/blue"/>
 
                 <EditText
@@ -203,7 +203,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Security"
+                android:text="@string/security"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/blue"
@@ -221,7 +221,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Change Password"
+                    android:text="@string/password"
                     android:textColor="@color/blue"/>
 
                 <ImageButton
@@ -237,7 +237,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Other"
+                android:text="@string/other"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/blue"
@@ -255,7 +255,7 @@
 
                 android:layout_gravity="left"
                 android:textColor="@color/blue"
-                android:text="history"
+                android:text="@string/history"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
                 <Button
                     android:id="@+id/securitybtn"
@@ -264,7 +264,7 @@
                     android:textSize="16dp"
                     android:layout_marginLeft="100dp"
                     android:textColor="@color/blue"
-                    android:text="security"
+                    android:text="@string/security"
                     style="@style/Widget.AppCompat.Button.Borderless"/>
 
             </LinearLayout>
@@ -277,7 +277,7 @@
                     android:id="@+id/logout"
                     android:layout_width="140dp"
                     android:backgroundTint="@color/blue"
-                    android:text="Log out"
+                    android:text="@string/logout"
                     android:drawableLeft="@drawable/logout"
                     android:padding="10dp"
                     android:textColor="@color/white"

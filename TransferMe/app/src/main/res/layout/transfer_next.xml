@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Money Transfer"
+            android:text="@string/money"
             android:gravity="right"
             android:layout_centerInParent="true"
             android:textSize="24sp"
@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Available Balance"
+            android:text="@string/balance"
             android:textSize="16sp"
             />
 
@@ -63,7 +63,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please, enter the amount of money transfer in below field."
+        android:text="@string/amount"
         android:textSize="16sp"
         android:textColor="@color/gray"
         android:layout_marginTop="32dp"
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/blue"
-        android:text="Enter Amount"/>
+        android:text="@string/enamount"/>
     <EditText
         android:id="@+id/accountAmount"
         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
         android:id="@+id/nextButton"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="Next"
+        android:text="@string/next"
         android:layout_gravity="center"
         android:textSize="18sp"
         android:backgroundTint="@color/blue"

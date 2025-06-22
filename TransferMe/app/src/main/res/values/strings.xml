@@ -13,4 +13,76 @@
     <string name="onboard4">International Transactions</string>
     <string name="oshibka">oIIIibka</string>
     <string name="onboard44">Provides the 100% freedom of the  financial management with lowest fees on International transactions.</string>
+    <string name="home">Home</string>
+    <string name="balance">Current Balance</string>
+    <string name="mycards">My Cards</string>
+    <string name="incoming">Incoming Transactions</string>
+    <string name="outgoing">Outgoing Transactions</string>
+    <string name="activity">Activity</string>
+    <string name="overal">Overall Incomings</string>
+    <string name="overall">Overall Outgoings</string>
+    <string name="mywallet">My Wallet</string>
+    <string name="categ">Payment Categories</string>
+    <string name="pin">Set PIN Code</string>
+    <string name="pin2">Please set your own\nPin Code</string>
+    <string name="pin3">Set Pin Code (5-digit)</string>
+    <string name="go">Go</string>
+    <string name="profileset">Profile Settings</string>
+    <string name="prof2">Your Profile Information</string>
+    <string name="inform">Personal Information</string>
+    <string name="ac1">Account Number</string>
+    <string name="ac2">Username</string>
+    <string name="ac3">Email</string>
+    <string name="ac4">Mobile Phone</string>
+    <string name="ac5">Address</string>
+    <string name="security">Security</string>
+    <string name="password">Change Password</string>
+    <string name="other">Other</string>
+    <string name="history">History</string>
+    <string name="historytranz">History Transaction</string>
+    <string name="logout">Log out</string>
+    <string name="filter">Filter</string>
+    <string name="del">Delete</string>
+    <string name="passwordnew">New password</string>
+    <string name="password1">Password</string>
+    <string name="create">Create</string>
+    <string name="passwordpin">Enter the pin code</string>
+    <string name="next">Next</string>
+    <string name="pincode">PIN-code</string>
+    <string name="passwordrec">Password Recovery</string>
+    <string name="emailadress">Email Address</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="addphon">Please add your mobile phone number</string>
+
+    <string name="add">Add Card</string>
+    <string name="toadd">To add a new card, please fill out the fields below carefully in order to add card successfully.</string>
+    <string name="card1">Card Number</string>
+    <string name="card2">Holders Name</string>
+    <string name="card3">Expiry Date</string>
+
+    <string name="login">Log in</string>
+    <string name="pas">Password</string>
+
+    <string name="forpas">Forgot your password?</string>
+    <string name="dpas">Don’t have an account?</string>
+    <string name="singup">Sing Up</string>
+    <string name="color">Card Color</string>
+    <string name="color1">Please, select a color to differentiate this card from other cards you have attached and organize your cards better.</string>
+    <string name="profile">Profile</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="set">Set</string>
+    <string name="profile2">Please set up your profile</string>
+    <string name="securityy">Security Questions</string>
+    <string name="security2">Please, add at least 3 Questions to keep your account secured in case you forget your credentials.</string>
+    <string name="save">Save</string>
+    <string name="confirmpass">Confirm your password</string>
+    <string name="account">Already have an account?</string>
+
+    <string name="money">Money Transfer</string>
+    <string name="amount">Please, enter the amount of money transfer in below field.</string>
+    <string name="enamount">Enter Amount</string>
+
 </resources>

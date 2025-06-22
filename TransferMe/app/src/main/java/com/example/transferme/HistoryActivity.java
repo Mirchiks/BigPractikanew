@@ -1,8 +1,10 @@
 package com.example.transferme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.transferme.module.AddCard;
 import com.example.transferme.module.Category;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -27,7 +30,8 @@ public class HistoryActivity extends AppCompatActivity implements ActivityFilter
     private HistoryAdapter adapter;
     private List<TransactionCategory> transactionList = new ArrayList<>();
     private SupaBaseClient supaBaseClient;
-    private Button btnfilter;
+    private Button btnfilter, btndel;
+    private ImageButton btnback;
 
 
     @Override
@@ -37,7 +41,11 @@ public class HistoryActivity extends AppCompatActivity implements ActivityFilter
 
         historyRecyclerView = findViewById(R.id.historyRecyclerView);
         btnfilter = findViewById(R.id.filterbnt);
+        btnback = findViewById(R.id.naz);
+        btndel = findViewById(R.id.deletebtn);
+        btnback.setOnClickListener(v-> finish());
         btnfilter.setOnClickListener(v-> loadCategoryFromSupabase());
+        btndel.setOnClickListener(v->getAllDelete());
         supaBaseClient = new SupaBaseClient();
         getTransactionHistory();
     }
@@ -71,6 +79,27 @@ public class HistoryActivity extends AppCompatActivity implements ActivityFilter
             }
         });
     }
+    private void getAllDelete(){
+        SupaBaseClient supaBaseClient = new SupaBaseClient();
+        supaBaseClient.deleteAllHistory(new SupaBaseClient.SBC_Callback() {
+            @Override
+            public void onFailure(IOException e) {
+                runOnUiThread(() -> {
+                    Log.e("getAllBasketDelete:onFailure", e.getLocalizedMessage());
+                });
+
+            }
+
+            @Override
+            public void onResponse(String responseBody) {
+                runOnUiThread(() -> {
+                    Log.e("getAllBasketDelete:onResponse", responseBody);
+                    getTransactionHistory();
+                });
+            }
+        });
+    }
+
     private void loadCategoryFromSupabase() {
         SupaBaseClient supaBaseClient = new SupaBaseClient();
         supaBaseClient.fetchCategory( new SupaBaseClient.SBC_Callback() {

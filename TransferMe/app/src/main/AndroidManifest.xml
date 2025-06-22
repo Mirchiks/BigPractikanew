@@ -114,6 +114,10 @@
             android:name=".SecurityQuestionsActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".SelectedCardActivity"
+            android:exported="true">
+        </activity>
 
     </application>
 

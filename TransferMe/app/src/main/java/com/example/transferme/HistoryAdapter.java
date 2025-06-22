@@ -35,12 +35,12 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         TransactionCategory transaction = transactions.get(position);
 
-        holder.categoryText.setText(transaction.getName());
+        holder.categoryText.setText(transaction.getCategory().getName());
         holder.amountText.setText(transaction.getAmount());
 
-        String url = "https://ubotxdvkhvusymbhrgvy.supabase.co/storage/v1/object/public/avatarscategory/";
+        String url = "https://guuwesagidyhlkgmzygs.supabase.co/storage/v1/object/public/avatarscategory/";
         Glide.with(context)
-                .load(url + transaction.getAvatar_category())
+                .load(url + transaction.getCategory().getAvatar_category())
                 .placeholder(R.drawable.button_off)
                 .error(R.drawable.button_on)
                 .into(holder.iconImage);

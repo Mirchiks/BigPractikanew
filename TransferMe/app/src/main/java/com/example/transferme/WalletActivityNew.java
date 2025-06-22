@@ -95,6 +95,7 @@ public class WalletActivityNew extends AppCompatActivity implements MyCardAdapte
             }
         });
     }
+
     private void loadCategoryFromSupabase() {
         SupaBaseClient supaBaseClient = new SupaBaseClient();
         supaBaseClient.fetchCategory( new SupaBaseClient.SBC_Callback() {

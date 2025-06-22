@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Security Questions"
+                android:text="@string/securityy"
                 android:gravity="right"
                 android:layout_centerInParent="true"
                 android:textSize="24sp"
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Please, add at least 3 Questions to keep your account secured in case you forget your credentials."
+            android:text="@string/security2"
             android:layout_marginBottom="24dp"
             android:textColor="@color/gray"/>
 
@@ -71,7 +71,7 @@
             android:id="@+id/btnSave"
             android:layout_width="150dp"
             android:layout_height="48dp"
-            android:text="Save"
+            android:text="@string/save"
             android:layout_gravity="center"
             android:textColor="@color/white"
             android:backgroundTint="@color/blue"

@@ -87,7 +87,7 @@ public class CardColorActivity extends AppCompatActivity {
 
     private void saveCardToSupabase(String cardNumber, String cardHolder, String expiryDate, String cardVendor, String balance, String id_user) {
         SupaBaseClient supaBaseClient = new SupaBaseClient();
-        AddCard addCard = new AddCard(id_user, cardNumber, cardHolder, expiryDate, cardVendor, balance, "00000");
+        AddCard addCard = new AddCard(cardNumber, cardHolder, expiryDate, cardVendor, balance,"000000", id_user);
         supaBaseClient.addCards(addCard, new SupaBaseClient.SBC_Callback() {
             @Override
             public void onFailure(IOException e) {

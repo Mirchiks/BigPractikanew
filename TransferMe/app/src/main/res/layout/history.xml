@@ -19,7 +19,7 @@
             android:id="@+id/titletext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="History Transaction"
+            android:text="@string/historytranz"
             android:gravity="right"
             android:layout_centerInParent="true"
             android:textSize="24sp"
@@ -34,16 +34,27 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="History"
+        android:text="@string/history"
         android:textSize="24sp"
         android:textStyle="bold"
         />
     <Button
         android:id="@+id/filterbnt"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="40dp"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="filter"
+        android:text="@string/filter"
+        android:textColor="@color/blue"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:textColor="@color/blue"
+        android:layout_height="wrap_content"
+        android:text="@string/del"
+        style="@style/Widget.AppCompat.Button.Borderless"
         />
 </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView

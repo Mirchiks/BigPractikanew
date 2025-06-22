@@ -30,7 +30,7 @@
                 android:id="@+id/titletext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Wallet"
+                android:text="@string/mywallet"
                 android:gravity="right"
                 android:layout_marginBottom="20dp"
                 android:layout_centerInParent="true"
@@ -54,7 +54,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Available Balance"
+                android:text="@string/balance"
                 android:textSize="16sp" />
 
             <TextView
@@ -63,6 +63,7 @@
                 android:layout_marginTop="8dp"
                 android:text="$2,85,856.20"
                 android:textSize="28sp"
+                android:textColor="@color/blue"
                 android:textStyle="bold" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -70,7 +71,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Payment Categories"
+            android:text="@string/categ"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"/>
@@ -89,24 +90,21 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:weightSum="4"
     android:layout_marginBottom="20dp">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Cards"
-            android:layout_weight="1"
+            android:text="@string/mycards"
             android:layout_gravity="left"
             android:gravity="center"
             android:textSize="16sp"
             android:textStyle="bold"
             />
-
     <ImageButton
         android:id="@+id/addcard"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_weight="3"
+        android:layout_marginLeft="270dp"
         android:layout_gravity="right"
         android:background="@color/white"
         android:gravity="center"

@@ -1,9 +1,13 @@
 package com.example.transferme.module;
 
-public class Category {
-    private int id;
-    private String name;
+import com.google.gson.annotations.SerializedName;
 
+public class Category {
+    @SerializedName("id")
+    private int id;
+    @SerializedName("name")
+    private String name;
+    @SerializedName("avatar_category")
     private  String avatar_category;
 
     public Category(int id, String name, String avatar_category) {

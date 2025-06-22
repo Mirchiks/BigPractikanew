@@ -219,7 +219,7 @@ public class SupaBaseClient {
 
     public void getTransactions(SBC_Callback callback) {
         Request request = new Request.Builder()
-                .url(DOMAIN_NAME + REST_PATH + "history_tranz?select=*")
+                .url(DOMAIN_NAME + REST_PATH + "history_tranz?select=*,Category(*)")
                 .addHeader("apikey", API_KEY)
                 .addHeader("Authorization", "Bearer " + API_KEY)
                 .build();
@@ -236,6 +236,36 @@ public class SupaBaseClient {
                     callback.onResponse(response.body().string());
                 } else {
                     callback.onFailure(new IOException("Ошибка сервера: " + response.code()));
+                }
+            }
+        });
+    }
+    public void addTransaction(TranzAdd tranzAdd, final SBC_Callback callback){
+        MediaType mediaType = MediaType.parse("application/json");
+        Gson gson = new Gson();
+        String json = gson.toJson(tranzAdd);
+        RequestBody body = RequestBody.create(json, mediaType);
+        Request request = new Request.Builder()
+                .url(DOMAIN_NAME + REST_PATH + "history_tranz")
+                .post(body)
+                .addHeader("apikey", API_KEY)
+                .addHeader("Authorization", "Bearer " + API_KEY)
+                .addHeader("Content-Type", "application/json")
+                .addHeader("Prefer", "return=minimal")
+                .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
+                callback.onFailure(e);
+            }
+
+            @Override
+            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                if(response.isSuccessful()){
+                    String responseBody = response.body().string();
+                    callback.onResponse(responseBody);
+                }else {
+                    callback.onFailure(new IOException("Ошибка сервера: " + response));
                 }
             }
         });
@@ -353,6 +383,31 @@ public class SupaBaseClient {
                     callback.onFailure(new IOException("Ошибка сервера: " + response));            }
             }    });
         }
+    public void deleteAllHistory(final SBC_Callback callback){
+        Request request = new Request.Builder()
+                .url(DOMAIN_NAME + REST_PATH + "history_tranz?id_profiles=eq." + DataBinding.getUuidUser())
+                .delete()
+                .addHeader("apikey", API_KEY)
+                .addHeader("Authorization", "Bearer " + API_KEY)
+                .addHeader("Prefer", "return=minimal")
+                .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
+                callback.onFailure(e);
+            }
+
+            @Override
+            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                if(response.isSuccessful()){
+                    String responseBody = response.body().string();
+                    callback.onResponse(responseBody);
+                }else {
+                    callback.onFailure(new IOException("Ошибка сервера: " + response));
+                }
+            }
+        });
+    }
 
 }
 

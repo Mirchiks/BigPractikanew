@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.TransactionViewHolder> {
+public class TransactionAdapter2 extends RecyclerView.Adapter<TransactionAdapter.TransactionViewHolder> {
 
     private List<Transaction> transactions;
 
-    public TransactionAdapter(List<Transaction> transactions) {
+    public TransactionAdapter2(List<Transaction> transactions) {
         this.transactions = transactions;
     }
 
@@ -36,16 +36,16 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
 
     @NonNull
     @Override
-    public TransactionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public TransactionAdapter.TransactionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_incoming, parent, false);
-        return new TransactionViewHolder(itemView);
+                .inflate(R.layout.item_outcoming, parent, false);
+        return new TransactionAdapter.TransactionViewHolder(itemView);
 
     }
 
 
     @Override
-    public void onBindViewHolder(@NonNull TransactionViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull TransactionAdapter.TransactionViewHolder holder, int position) {
         Transaction currentItem = transactions.get(position);
 
         holder.name.setText(currentItem.getSenderName());

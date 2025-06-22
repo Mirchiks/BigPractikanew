@@ -38,11 +38,11 @@ public class MyCardAdapter extends RecyclerView.Adapter<MyCardAdapter.CardViewHo
     public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
         MyCard card = cards.get(position);
 
-
         holder.cardNumber.setText(card.getCardNumber());
         holder.cardHolder.setText(card.getCardHolder());
         holder.expiryDate.setText(card.getExpiryDate());
         holder.balance.setText(card.getBalance());
+        holder.cardVendor.setText(card.getCardVendor());
 
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {
@@ -51,9 +51,6 @@ public class MyCardAdapter extends RecyclerView.Adapter<MyCardAdapter.CardViewHo
         });
     }
 
-//    private String formatCardNumber(String cardNumber) {
-//        return cardNumber.replaceAll("(.{4})", "$1 ").trim();
-//    }
 
     @Override
     public int getItemCount() {
@@ -62,15 +59,16 @@ public class MyCardAdapter extends RecyclerView.Adapter<MyCardAdapter.CardViewHo
 
     static class CardViewHolder extends RecyclerView.ViewHolder {
         LinearLayout cardView;
-        TextView cardNumber, cardHolder, expiryDate, balance;
+        TextView cardNumber, cardHolder, expiryDate, balance, cardVendor;
 
         public CardViewHolder(@NonNull View itemView) {
             super(itemView);
             cardView = itemView.findViewById(R.id.CardView);
             cardNumber = itemView.findViewById(R.id.CardNumber);
-            cardHolder = itemView.findViewById(R.id.CardName);
+            cardHolder = itemView.findViewById(R.id.CardHolder);
             expiryDate = itemView.findViewById(R.id.ExpiryDate);
             balance = itemView.findViewById(R.id.BalanceAmount);
+            cardVendor = itemView.findViewById(R.id.CardVendor);
         }
     }
 }

@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log in"
+            android:text="@string/login"
             android:textSize="28sp"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -47,7 +47,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email Address"
+            android:text="@string/emailadress"
             android:textSize="16sp"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="8dp"/>
@@ -64,7 +64,7 @@
         <Button
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Log in"
+            android:text="@string/login"
             android:textColor="@color/white"
             android:backgroundTint="@color/blue"
             android:textSize="18sp"
@@ -99,13 +99,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don’t have an account?"
+                android:text="@string/dpas"
                 android:textColor="@color/gray"
                 android:textSize="16sp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="@string/singup"
                 android:textColor="@color/blue"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
         </LinearLayout>
