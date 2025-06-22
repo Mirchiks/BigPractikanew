@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/naz"
+                android:background="@drawable/strelanaz"
+                android:layout_width="60dp"
+                android:gravity="left"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/titletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Card"
+                android:gravity="right"
+                android:layout_centerInParent="true"
+                android:textSize="24sp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="To add a new card, please fill out the fields below carefully in order to add card successfully."
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/CardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="0000-0000-0000-0000"
+            android:digits="0123456789-"
+            android:inputType="number"
+            android:maxLength="19"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Holder's Name"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/CardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="........"
+            android:inputType="textCapWords"
+           />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/ExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="11/25"
+                    android:inputType="text"
+                    android:maxLength="5"
+                    android:digits="0123456789-"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CVV"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/Cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="123"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Confirm"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="32dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -21,7 +21,7 @@ public class OnboardingActivity4 extends AppCompatActivity {
 
 
         btnGetStarted.setOnClickListener(v -> {
-            startActivity(new Intent(OnboardingActivity4.this, Home.class));
+            startActivity(new Intent(OnboardingActivity4.this, RegistrActivity.class));
             finish();
         });
 

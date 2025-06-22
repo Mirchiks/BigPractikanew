@@ -34,8 +34,8 @@ public class Home extends AppCompatActivity {
     private void setupCardsRecyclerView() {
         RecyclerView cardsRecyclerView = findViewById(R.id.cardRecyclerView);
         List<Card> cards = Arrays.asList(
-                new Card("Visa", "mastercard", "0445", "$8.7576542", R.drawable.mastercard),
-                new Card("MasterCard", "visa", "6253", "$5.4321000", R.drawable.mastercard)
+                new Card("Visa", "mastercard", "0445", "$8.7576542","", R.drawable.mastercard),
+                new Card("MasterCard", "visa", "6253", "$5.4321000","",R.drawable.mastercard)
         );
         cardsRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         cardsRecyclerView.setAdapter(new CardAdapter(cards));
@@ -58,7 +58,7 @@ public class Home extends AppCompatActivity {
         });
 
         recordsButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Home.this, WalletActivity.class);
+            Intent intent = new Intent(Home.this, WalletActivityNew.class);
             startActivity(intent);
         });
 
@@ -68,7 +68,7 @@ public class Home extends AppCompatActivity {
         });
 
         profileButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Home.this, ProfileActivity.class);
+            Intent intent = new Intent(Home.this, ProfileSetingActivity.class);
             startActivity(intent);
         });
     }

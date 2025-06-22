@@ -12,15 +12,24 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Splash extends AppCompatActivity {
-
+    private SessionManager session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        session = new SessionManager(this);
+
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(Splash.this, MainActivity.class);
-            startActivity(intent);
-            finish();
+            if (!session.isLoggedIn()) {
+                session.logoutUser();
+                finish();
+                return;
+            }else {
+                Intent intent = new Intent(Splash.this, PinActivity.class);
+                startActivity(intent);
+                finish();
+            }
         }, 3000);
+
     }
 }

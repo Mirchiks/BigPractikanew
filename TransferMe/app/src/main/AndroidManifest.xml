@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/transferd"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/transferd"
         android:supportsRtl="true"
         android:theme="@style/Theme.TransferMe"
         tools:targetApi="31">
@@ -61,6 +61,60 @@
             android:name=".RegistrActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".PhoneNumberActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".PinActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CardColorActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".AddCardActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".WalletActivityNew"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ProfileSetingActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".TransferNextActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".InputEmailActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".NewPasswordActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".EmailCodeActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SecurityQuestionsActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>

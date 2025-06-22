@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/naz"
+                android:background="@drawable/strelanaz"
+                android:layout_width="60dp"
+                android:gravity="left"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Questions"
+                android:gravity="right"
+                android:layout_centerInParent="true"
+                android:textSize="24sp"
+                android:layout_marginBottom="20dp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please, add at least 3 Questions to keep your account secured in case you forget your credentials."
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <Spinner
+                android:id="@+id/spinnerQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/spinner"
+                android:layout_margin="10dp"/>
+
+
+            <Spinner
+                android:id="@+id/spinnerQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner"/>
+            <Spinner
+                android:id="@+id/spinnerQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner"/>
+
+</LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

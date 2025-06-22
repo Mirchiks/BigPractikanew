@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include layout="@layout/menu" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/naz"
+                android:background="@drawable/strelanaz"
+                android:layout_width="60dp"
+                android:gravity="left"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:gravity="right"
+                android:layout_centerInParent="true"
+                android:textSize="24sp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_height="wrap_content"
+            android:text="Please set up your profile"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageButton
+                android:id="@+id/avatarka"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/elipspro"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="First Name"/>
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Michael"
+            android:layout_marginBottom="16dp">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="Last Name"/>
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Starc"
+            android:layout_marginBottom="16dp">
+        </EditText>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/save_button"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Set"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            android:layout_marginTop="26dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

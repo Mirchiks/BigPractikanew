@@ -10,7 +10,8 @@
             android:layout_width="100dp"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:background="@drawable/radius"
+            android:background="@drawable/radius2"
+            android:textColor="@color/white"
             android:text="USD\n72.26"/>
 
         <TextView
@@ -18,15 +19,16 @@
             android:layout_width="100dp"
             android:gravity="center"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/radius"
+            android:textColor="@color/white"
+            android:background="@drawable/radius2"
             android:layout_height="wrap_content"
-
             android:text="Euro\n34.48"/>
 
         <TextView
             android:id="@+id/Yen"
-            android:background="@drawable/radius"
+            android:background="@drawable/radius2"
             android:gravity="center"
+            android:textColor="@color/white"
             android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
             android:layout_width="100dp"

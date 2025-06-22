@@ -1,6 +1,6 @@
 package com.example.transferme;
 
-public class  Transaction {
+public class Transaction {
     public String senderName;
     public String date;
     public String amount;

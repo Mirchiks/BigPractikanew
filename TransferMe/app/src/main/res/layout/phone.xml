@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/naz"
+                android:background="@drawable/strelanaz"
+                android:layout_width="60dp"
+                android:gravity="left"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:gravity="right"
+                android:layout_centerInParent="true"
+                android:textSize="24sp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_height="wrap_content"
+            android:text="Please add your mobile phone number"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="* Phone Number"/>
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+1 8456 5846 5846"
+            android:layout_marginBottom="16dp">
+
+        </EditText>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/save_button"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Confirm"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            android:layout_marginTop="26dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

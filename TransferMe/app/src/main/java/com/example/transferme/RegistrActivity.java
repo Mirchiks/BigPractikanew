@@ -1,5 +1,7 @@
 package com.example.transferme;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -17,7 +19,7 @@ import java.io.IOException;
 
 public class RegistrActivity extends AppCompatActivity {
     private EditText editEmail, editPassword, editPassword2;
-    private Button signUpButton;
+    private Button signUpButton, loginButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +28,19 @@ public class RegistrActivity extends AppCompatActivity {
         editPassword = findViewById(R.id.editpassword);
         editPassword2 = findViewById(R.id.editepassword2);
         signUpButton = findViewById(R.id.sing_up);
+        loginButton = findViewById(R.id.loginButton);
 
         signUpButton.setOnClickListener(v -> {
             registerUser(
                     editEmail.getText().toString().trim(),
                     editPassword.getText().toString().trim()
             );
+        });
+        loginButton.setOnClickListener(v -> {
+
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         });
 
     }
@@ -61,8 +70,14 @@ public class RegistrActivity extends AppCompatActivity {
 //                        updateProfile(email);
 //                        ASession.setLoggedIn(true);
 
+                        Intent intent = new Intent(RegistrActivity.this, ProfileActivity.class);
+                        startActivity(intent);
                         Log.e("registerUser:onResponse", auth.getUser().getId());
 
+                        SharedPreferences sharedPreferences = getSharedPreferences("Data_binding", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("uuid_user", auth.getUser().getId());
+                        editor.apply();
                     });
                 }
             });

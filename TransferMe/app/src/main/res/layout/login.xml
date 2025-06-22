@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -45,6 +45,7 @@
             android:layout_marginBottom="32dp"/>
 
         <TextView
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email Address"
@@ -71,27 +72,24 @@
             android:layout_height="wrap_content"
             android:hint="Enter your password"
             android:inputType="textPassword"
-            android:layout_marginBottom="24dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"/>
+        <Button
+            android:id="@+id/resetpassword"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Confirm Password"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:text="Forgot your password?"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@color/white"/>
 
-        <EditText
-            android:id="@+id/editepassword2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirm your password"
-            android:inputType="textPassword"
-            android:layout_marginBottom="32dp"/>
+
 
         <Button
+            android:id="@+id/log_in"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="Log in"
             android:textColor="@color/white"
             android:backgroundTint="@color/blue"
             android:textSize="18sp"
@@ -102,7 +100,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp">
+            android:layout_marginTop="120dp">
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -130,6 +128,7 @@
                 android:textColor="@color/gray"
                 android:textSize="16sp"/>
             <Button
+                android:id="@+id/regButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
@@ -137,4 +136,4 @@
                 style="@style/Widget.AppCompat.Button.Borderless"/>
         </LinearLayout>
     </LinearLayout>
-</ScrollView>
+</LinearLayout>

@@ -13,46 +13,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WalletActivity extends AppCompatActivity {
-
+    private ImageButton btnBack;
+    private Button addButton;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.wallet);
 
-            ImageButton analyzesButton = findViewById(R.id.AnalyzesButtonMenu);
-            ImageButton recordsButton = findViewById(R.id.RecordsButtonMenu);
-            ImageButton basketButton = findViewById(R.id.BasketButtonMenu);
-            ImageButton profileButton = findViewById(R.id.ProfileButtonMenu);
-
-            analyzesButton.setOnClickListener(v -> {
-                Intent intent = new Intent(WalletActivity.this, Home.class);
-                startActivity(intent);
-            });
-
-            recordsButton.setOnClickListener(v -> {
-                Intent intent = new Intent(WalletActivity.this, WalletActivity.class);
-                startActivity(intent);
-            });
-
-            basketButton.setOnClickListener(v -> {
-                Intent intent = new Intent(WalletActivity.this, StatActivity.class);
-                startActivity(intent);
-            });
-
-            profileButton.setOnClickListener(v -> {
-                Intent intent = new Intent(WalletActivity.this, ProfileActivity.class);
-                startActivity(intent);
-            });
-
-            Button backButton = findViewById(R.id.naz);
-            backButton.setOnClickListener(v -> {
+            btnBack = findViewById(R.id.naz);
+            btnBack.setOnClickListener(v -> {
 
                 Intent intent = new Intent(this, Home.class);
                 startActivity(intent);
                 finish();
             });
+            addButton = findViewById(R.id.addcard);
+            addButton.setOnClickListener(v -> {
 
-            RecyclerView cardsRecyclerView = findViewById(R.id.cardRecyclerView);
+                Intent intent = new Intent(this, AddCardActivity.class);
+                startActivity(intent);
+                finish();
+            });
+
+            RecyclerView cardsRecyclerView = findViewById(R.id.cardsRecyclerView);
             cardsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
             RecyclerView currencyRecyclerView = findViewById(R.id.currencyRecycle);

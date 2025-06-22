@@ -25,7 +25,7 @@ public class StatActivity extends AppCompatActivity {
         });
 
         recordsButton.setOnClickListener(v -> {
-            Intent intent = new Intent(StatActivity.this, WalletActivity.class);
+            Intent intent = new Intent(StatActivity.this, WalletActivityNew.class);
             startActivity(intent);
         });
 
@@ -35,15 +35,9 @@ public class StatActivity extends AppCompatActivity {
         });
 
         profileButton.setOnClickListener(v -> {
-            Intent intent = new Intent(StatActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(StatActivity.this, ProfileSetingActivity.class);
             startActivity(intent);
         });
-        Button backButton = findViewById(R.id.naz);
-        backButton.setOnClickListener(v -> {
 
-            Intent intent = new Intent(this, Home.class);
-            startActivity(intent);
-            finish();
-        });
     }
 }

@@ -7,7 +7,7 @@ public class Card {
     public String balance;
     public int imageRes;
 
-    public Card(String name, String type, String number, String balance, int imageRes) {
+    public Card(String name, String type, String number, String balance, String s, int imageRes) {
         this.name = name;
         this.type = type;
         this.number = number;
