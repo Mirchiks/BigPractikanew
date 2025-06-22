@@ -81,6 +81,8 @@
         android:text="@string/Continue"
         android:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="70dp"
